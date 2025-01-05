@@ -4,8 +4,8 @@
 #include <Adafruit_NeoPixel.h>
 
 // Define your Wi-Fi credentials
-const char* ssid = "THENORTHFACE";
-const char* password = "rangerover2016";
+const char* ssid = "ssid";
+const char* password = "pass";
 
 // Define the aviationweather.gov API details
 #define SERVER "aviationweather.gov"
@@ -14,7 +14,7 @@ const char* airport_code = "KPOE";  // The airport code you want the METAR data 
 
 // LED setup
 #define LED_PIN D1  // Define the pin connected to the WS2811 data pin
-#define NUM_LEDS 1  // We only have one LED
+#define NUM_LEDS 1  // Number of LEDs
 Adafruit_NeoPixel strip(NUM_LEDS, LED_PIN, NEO_GRB + NEO_KHZ800);  // Use GRB color order
 
 void setup() {
