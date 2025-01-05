@@ -15,7 +15,7 @@ const char* airport_code = "KPOE";  // The airport code you want the METAR data 
 // LED setup
 #define LED_PIN D1  // Define the pin connected to the WS2811 data pin
 #define NUM_LEDS 1  // Number of LEDs
-Adafruit_NeoPixel strip(NUM_LEDS, LED_PIN, NEO_GRB + NEO_KHZ800);  // Use GRB color order
+Adafruit_NeoPixel strip(NUM_LEDS, LED_PIN, NEO_GRB + NEO_KHZ800);  // I used a ws2811 with GRB color order you may need to change
 
 void setup() {
   Serial.begin(9600);  // Set baud rate to 9600
